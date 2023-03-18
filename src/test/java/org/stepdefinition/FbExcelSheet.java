@@ -20,7 +20,7 @@ public class FbExcelSheet extends BaseClassCucu{
 	@When("user has to pass the username in email filed by using excelsheeet")
 	public void userHasToPassTheUsernameInEmailFiledByUsingExcelsheeet() throws IOException {
 	    f = new POJOLoginPage();
-	    sendKeys(f.getEmailtxt(), excelRead("D:\\forFblogin.xlsx", "Sheet1", 0, 1));
+	    sendKeys(f.getEmailtxt(), dbDatas());
 
 	}
 	@When("user has to pass the passsword in pass filed by using excelsheet")

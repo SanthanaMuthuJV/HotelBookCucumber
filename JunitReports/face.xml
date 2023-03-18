@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.628348">
-<testcase classname="To check login Functionality of fb appln" name="To check invalid user and password in filed" time="16.628348">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.602402">
+<testcase classname="To check login Functionality of fb appln" name="To check invalid user and password in filed" time="17.602402">
 <failure message="java.lang.AssertionError:  verify the password &#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.stepdefinition.FbExcelSheet.userHasToPassThePassswordInPassFiledByUsingExcelsheet(FbExcelSheet.java:32)&#13;&#10;&#9;at ✽.user has to pass the passsword in pass filed by using excelsheet(src/test/resources/feature/facebookExcel.feature:6)&#13;&#10;"><![CDATA[When user has to load the fb url............................................passed
 And user has to pass the username in email filed by using excelsheeet.......passed
 When user has to pass the passsword in pass filed by using excelsheet.......failed
