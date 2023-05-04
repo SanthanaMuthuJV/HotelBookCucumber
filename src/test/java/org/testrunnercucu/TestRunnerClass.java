@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
                  monochrome = true, 
                  dryRun = false,
                  snippets = SnippetType.CAMELCASE,
-                 tags =  "@cell",
+                 tags =  "@hotel",
                  
                
                  plugin = {"pretty","html:HtmlReport",

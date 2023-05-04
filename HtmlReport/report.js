@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/facebookExcel.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/hotel.feature");
 formatter.feature({
-  "name": "To check login Functionality of fb appln",
+  "name": "To Validate The Overall Functionality Of Hotel Booking on Adacitin Application",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "To check invalid user and password in filed",
+  "name": "To check valid data in mandatory filed",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@cell"
+      "name": "@hotel"
     }
   ]
 });
@@ -21,47 +21,125 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user has to load the fb url",
+  "name": "To Launch The Url of Adacitin Appln",
   "keyword": "When "
 });
 formatter.match({
-  "location": "FbExcelSheet.userHasToLoadTheFbUrl()"
+  "location": "Adacitin.toLaunchTheUrlOfAdacitinAppln()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user has to pass the username in email filed by using excelsheeet",
+  "name": "To Pass The Valid Username and Password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "FbExcelSheet.userHasToPassTheUsernameInEmailFiledByUsingExcelsheeet()"
+  "location": "Adacitin.toPassTheValidUsernameAndPassword()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user has to pass the passsword in pass filed by using excelsheet",
-  "keyword": "When "
+  "name": "Check Whether Submit button Click or Not",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "FbExcelSheet.userHasToPassThePassswordInPassFiledByUsingExcelsheet()"
+  "location": "Adacitin.checkWhetherSubmitButtonClickOrNot()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError:  verify the password \r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.stepdefinition.FbExcelSheet.userHasToPassThePassswordInPassFiledByUsingExcelsheet(FbExcelSheet.java:32)\r\n\tat ✽.user has to pass the passsword in pass filed by using excelsheet(src/test/resources/feature/facebookExcel.feature:6)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user has to click the login button in submit filed",
-  "keyword": "When "
+  "name": "the user has to select the location in a particular filed",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "FbExcelSheet.userHasToClickTheLoginButtonInSubmitFiled()"
+  "location": "Adacitin.theUserHasToSelectTheLocationInAParticularFiled()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
+formatter.step({
+  "name": "the user has to choose how many children in a particular filed and click the search btn",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Adacitin.theUserHasToChooseHowManyChildrenInAParticularFiledAndClickTheSearchBtn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User has to select the hotelroom and cilck the continue btn",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Adacitin.userHasToSelectTheHotelroomAndCilckTheContinueBtn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user has to pass firstname and lastname in particular filed",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Adacitin.userHasToPassFirstnameAndLastnameInParticularFiled()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user has to give their address in particular filed",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Adacitin.userHasToGiveTheirAddressInParticularFiled()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user has to pass the 16digits credircard number and select the cardtype",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Adacitin.userHasToPassTheDigitsCredircardNumberAndSelectTheCardtype(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user has to pass the expri month\u0026year details in particular filed",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Adacitin.userHasToPassTheExpriMonthYearDetailsInParticularFiled()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user has to give the ccv number of card and click the booknow btn",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Adacitin.userHasToGiveTheCcvNumberOfCardAndClickTheBooknowBtn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user check whether see the order no or not , then orderno print in consloe when order no get",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Adacitin.userCheckWhetherSeeTheOrderNoOrNotThenOrdernoPrintInConsloeWhenOrderNoGet()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

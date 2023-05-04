@@ -1,1 +1,1 @@
-src/test/resources/feature/facebookExcel.feature:3
+src/test/resources/feature/hotel.feature:3
